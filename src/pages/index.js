@@ -34,7 +34,7 @@ const IndexPage = () => (
       <h3>Love is Not a Moving Target</h3>
     </div>
     
-      <Parallax pages={3}>
+      <Parallax pages={2} horizontal={true}>
       <ParallaxLayer offset={0}speed={0.5}> 
       <Emoting>Compassion Fatigue</Emoting>
       </ParallaxLayer>
