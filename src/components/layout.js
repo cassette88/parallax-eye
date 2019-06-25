@@ -35,6 +35,8 @@ const Layout = ({ children }) => {
           // margin: `0 auto`,
           zIndex: `-1`,
           // maxWidth: 960,
+          justifyContent: `center`,
+         
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
           textAlign: `center`,
@@ -48,7 +50,8 @@ const Layout = ({ children }) => {
         <footer
           style={{
            marginTop: `auto`,
-            flexShrink: `0`
+           flexShrink: `0`
+           
           }}
         >
           © {new Date().getFullYear()}, Built with
