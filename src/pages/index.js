@@ -13,14 +13,14 @@ const Emoting = styled.h2`
   margin-top: 6em;
   color: black;
 `
-//  const Wrapper = styled.div `
-//   height
-//  `
+ const Wrapper = styled.div `
+  flex-grow: 1;
+ `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-
+    <Wrapper>
     <SwipeableViews enableMouseEvents resistance>
    <div><Emoting>Stop Saying I, Start Saying Goodbye</Emoting></div>
     <div>
@@ -34,7 +34,7 @@ const IndexPage = () => (
       <h3>Love is Not a Moving Target</h3>
     </div>
     
-      <Parallax pages={3}>
+      <Parallax style={{Height:`100%`}}pages={3}>
       <ParallaxLayer offset={0}speed={0.5} factor={1}> 
       <Emoting>Compassion Fatigue</Emoting>
       </ParallaxLayer>
@@ -57,7 +57,7 @@ const IndexPage = () => (
       </div>
     </SwipeableViews>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
-    
+    </Wrapper>
   </Layout>
 )
 

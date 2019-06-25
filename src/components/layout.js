@@ -31,8 +31,10 @@ const Layout = ({ children }) => {
           display: `flex`,
           minHeight: `100vh`,
           flexDirection: `column`,
-          margin: `0 auto`,
-          maxWidth: 960,
+          alignItems: `stretch`,
+          // margin: `0 auto`,
+          zIndex: `-1`,
+          // maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
           textAlign: `center`,
@@ -43,20 +45,16 @@ const Layout = ({ children }) => {
         <main>{children}</main>
 
 
-        {/* <footer
+        <footer
           style={{
            marginTop: `auto`,
-            flexGrow: `1`
-            // bottom: '0',
-            // width: '100%',
-            // height: '2em',
-            // background: '#9690B6',
+            flexShrink: `0`
           }}
         >
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
+        </footer>
       </div>
     </>
   )
