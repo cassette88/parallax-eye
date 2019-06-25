@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <div
          className ="site" style={{
           display: `flex`,
-          minHeight: `100vh`,
+          // minHeight: `100vh`,
           flexDirection: `column`,
           margin: `0 auto`,
           maxWidth: 960,

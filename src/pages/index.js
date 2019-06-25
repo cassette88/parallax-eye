@@ -1,5 +1,5 @@
 import React from "react"
-
+// CSS needs sorting
 import Phrases from '../components/Phrases'
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -13,10 +13,9 @@ const Emoting = styled.h2`
   margin-top: 6em;
   color: black;
 `
-// const Wrapper = styled.div `
-//  display: flex;
-//  justify-content: center;
-// `
+//  const Wrapper = styled.div `
+//   height
+//  `
 
 const IndexPage = () => (
   <Layout>
@@ -34,7 +33,7 @@ const IndexPage = () => (
     <div>
       <h3>Love is Not a Moving Target</h3>
     </div>
-    <div>
+    
       <Parallax pages={3}>
       <ParallaxLayer offset={0}speed={0.5}> 
       <Emoting>Compassion Fatigue</Emoting>
@@ -46,7 +45,7 @@ const IndexPage = () => (
       borderRadius={8} />
      </ParallaxLayer>
       </Parallax>
-    </div>
+    
     <div>
     <Phrases/>
     </div>
