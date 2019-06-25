@@ -35,11 +35,11 @@ const IndexPage = () => (
       <h3>Love is Not a Moving Target</h3>
     </div>
     <div>
-      <Parallax pages={2}>
+      <Parallax pages={3}>
       <ParallaxLayer offset={0}speed={0.5}> 
       <Emoting>Compassion Fatigue</Emoting>
       </ParallaxLayer>
-      <ParallaxLayer offset={.9} speed={.5} factor={1}>
+      <ParallaxLayer offset={.9} speed={1} factor={1}>
       <Image
       width={[ 1, 1, 1, 1 ]}
       src='https://source.unsplash.com/random/1280x720'
