@@ -24,9 +24,10 @@ const IndexPage = () => (
 
     <SwipeableViews enableMouseEvents resistance>
    <div><Emoting>Stop Saying I, Start Saying Goodbye</Emoting></div>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div>
       <Image
-      width={[ 1, 1, 1/2 ]}
+      width={[ 1, 1, 1, 1 ]}
+      
       src='https://source.unsplash.com/random/1280x720'
       borderRadius={8} />
     </div>
@@ -38,6 +39,12 @@ const IndexPage = () => (
       <ParallaxLayer offset={0}speed={0.5}> 
       <Emoting>Compassion Fatigue</Emoting>
       </ParallaxLayer>
+      <ParallaxLayer offset={.9} speed={.5} factor={1}>
+      <Image
+      width={[ 1, 1, 1, 1 ]}
+      src='https://source.unsplash.com/random/1280x720'
+      borderRadius={8} />
+     </ParallaxLayer>
       </Parallax>
     </div>
     <div>
