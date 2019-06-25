@@ -44,6 +44,9 @@ const IndexPage = () => (
       src='https://source.unsplash.com/random/1280x720'
       borderRadius={8} />
      </ParallaxLayer>
+     <ParallaxLayer offset={1.2}speed={1}factor={1}>
+       <Emoting>There is No Box To Think Outside Of</Emoting>
+     </ParallaxLayer>
       </Parallax>
     
     <div>
