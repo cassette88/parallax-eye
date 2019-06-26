@@ -1,13 +1,16 @@
 import React from "react"
+import {Link} from "gatsby"
 // CSS needs sorting
-import Phrases from '../components/Phrases'
+import Pencil from '../components/Pencil'
+import Pen from '../components/Pen'
 import Layout from "../components/layout"
+
 // import Image from "../components/image"
 import { Image } from "@rebass/emotion"
 import SEO from "../components/seo"
 import styled from "@emotion/styled"
 import SwipeableViews from 'react-swipeable-views';
-import { Parallax, ParallaxLayer} from 'react-spring/renderprops-addons.cjs'
+import PLayers from "../components/Parallax";
 
 
 // margin-top: 6em;
@@ -36,28 +39,22 @@ const IndexPage = () => (
     <div>
       <h3>Love is Not a Moving Target</h3>
     </div>
-    
-      <Parallax style={{color:`gray`}}pages={3}>
-      <ParallaxLayer offset={0}speed={0.5} factor={1}> 
-      <Emoting>Compassion Fatigue</Emoting>
-      </ParallaxLayer>
-      <ParallaxLayer offset={.9} speed={1} factor={1}>
-      <Image
-      width={[ 1, 1, 1, 1 ]}
-      src='https://source.unsplash.com/random/1280x720'
-      borderRadius={8} />
-     </ParallaxLayer>
-     <ParallaxLayer offset={1.2}speed={1}factor={1}>
-       <Emoting>There is No Box To Think Outside Of</Emoting>
-     </ParallaxLayer>
-      </Parallax>
-    
-    <div>
-    <Phrases/>
-    </div>
+   
+     
+    <Pencil index={0}/> 
+    <Pen index={0}/>
     <div>
       <p>No Consolation Here For Such an Awkward Heart</p>  
       </div>
+      <PLayers/>
+    <Pencil index={1}/>
+    <Pen index={1}/>
+    <Pencil index={2}/>
+
+    <Pencil index={3}/>
+    <Pen index={2}/>
+    <Pen index={3}/>
+    <div><Link to="/page-2">Bye</Link></div>
     </SwipeableViews>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
     </Wrapper>
