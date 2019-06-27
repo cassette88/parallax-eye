@@ -1,0 +1,196 @@
+
+.words {
+    font-size: 2em;
+    font-family: 'Lora', serif;
+    text-align: center;
+    z-index: 1;
+    
+  }
+  
+  .layer0{
+      background: #00b4ff;
+      /* background-image: url(https://images.unsplash.com/photo-1489321336462-efe12c02d099?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; */
+      color: #333;
+      /* height: 30vh; */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* z-index:1; */
+      /* overflow-x: hidden; */
+  }
+  
+  .layer0-wrap{
+    bottom: 0;
+      left: 0;
+      padding-top: 50px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: -1;
+  }
+  
+  /* KEYFRAMES */
+  /* Mark Bowley https://codepen.io/Mark_Bowley/pen/xEbuI */
+  @-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -400px;
+        opacity: 1
+    }
+   50% {
+       opacity:1
+   }
+  
+    100% {
+        margin-left: 150%;
+        opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes animateCloud {
+    0% {
+        margin-left: -400px;
+        opacity: 1;
+    }
+    50% {
+      opacity:1
+  }
+    100% {
+        margin-left: 150%;
+        opacity: 1
+    }
+  }
+  
+  @keyframes animateCloud {
+    0% {
+        margin-left: -400px;
+        opacity: 1;
+    }
+    50% {
+      opacity:1
+  }
+    100% {
+        margin-left: 150%;
+        opacity: 1;
+    }
+  }
+  
+  /* ANIMATIONS */
+  
+  .x1 {
+      -webkit-animation: animateCloud 35s linear infinite;
+      -moz-animation: animateCloud 35s linear infinite;
+      animation: animateCloud 35s linear infinite;
+  
+      z-index: -1;
+  }
+  
+  .x2 {
+      -webkit-animation: animateCloud 25s linear infinite;
+      -moz-animation: animateCloud 25s linear infinite;
+      animation: animateCloud 25s linear infinite;
+      z-index: -1;
+      /* -webkit-transform: scale(0.3);
+      -moz-transform: scale(0.3);
+      transform: scale(0.3); */
+  }
+  
+  .cover {
+      z-index:4;
+      -webkit-animation: animateCloud 25s linear infinite;
+      -moz-animation: animateCloud 25s linear infinite;
+      animation: animateCloud 25s linear infinite;
+  }
+  
+  .cloudy{
+      z-index: -1;
+  }
+  
+  .x3 {
+      -webkit-animation: animateCloud 30s linear infinite;
+      -moz-animation: animateCloud 30s linear infinite;
+      animation: animateCloud 30s linear infinite;
+      
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      transform: scale(0.5);
+  }
+  
+  .x4 {
+      -webkit-animation: animateCloud 18s linear infinite;
+      -moz-animation: animateCloud 18s linear infinite;
+      animation: animateCloud 18s linear infinite;
+      
+      -webkit-transform: scale(0.4);
+      -moz-transform: scale(0.4);
+      transform: scale(0.4);
+  }
+  
+  .x5 {
+      -webkit-animation: animateCloud 25s linear infinite;
+      -moz-animation: animateCloud 25s linear infinite;
+      animation: animateCloud 25s linear infinite;
+      
+      -webkit-transform: scale(0.55);
+      -moz-transform: scale(0.55);
+      transform: scale(0.55);
+  }
+  
+  /* OBJECTS */
+  /* 
+  .cloud {
+      background: #fff;
+      background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+      background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+      background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+      background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+      background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+      
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      
+      -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  
+      height: 15px;
+      position: relative;
+      width: 35px;
+  }
+  
+  .cloud:after, .cloud:before {
+      background: #fff;
+      content: '';
+      position: absolute;
+      z-indeX: -1;
+  }
+  
+  .cloud:after {
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+  
+      height: 25px;
+      left: 50px;
+      top: -50px;
+      width: 25px;
+  }
+  
+  .cloud:before {
+      -webkit-border-radius: 200px;
+      -moz-border-radius: 200px;
+      border-radius: 200px;
+  
+      width: 7em;
+      height: 2.0em;
+      right: 50px;
+      top: -90px;
+  } */
+  

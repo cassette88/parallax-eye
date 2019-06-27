@@ -11,6 +11,7 @@ import SEO from "../components/seo"
 import styled from "@emotion/styled"
 import SwipeableViews from 'react-swipeable-views';
 import PLayers from "../components/Parallax";
+import Parallax2 from '../components/Parallax2';
 
 
 // margin-top: 6em;
@@ -21,14 +22,17 @@ const Emoting = styled.h2`
 `
  const Wrapper = styled.div `
   flex-grow: 1;
- `
+  background-image: url("https://images.unsplash.com/photo-1561419060-1850e1f5f5b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")
+  
+  `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
-    <SwipeableViews enableMouseEvents resistance>
+    <SwipeableViews index={4} enableMouseEvents resistance>
    <div><Emoting>Stop Saying I, Start Saying Goodbye</Emoting></div>
+    <Parallax2/>
     <div>
       <Image
       width={[ 1, 1, 1, 1 ]}
