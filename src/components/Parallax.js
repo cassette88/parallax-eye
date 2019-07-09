@@ -31,14 +31,14 @@ export default function PLayers() {
         <Emoting>Compassion Fatigue</Emoting>
         <FadeOut>scroll down</FadeOut>
         </ParallaxLayer>
-        <ParallaxLayer offset={.9} speed={1} factor={1}>
+        <ParallaxLayer offset={.6} speed={1} factor={1}>
         <Image
         width={[ 1, 1, 1, 1 ]}
         src={data.file.childImageSharp.fluid.src}
         // src='https://source.unsplash.com/random/1280x720'
         borderRadius={8} />
        </ParallaxLayer>
-       <ParallaxLayer offset={1.2}speed={1}factor={1}>
+       <ParallaxLayer offset={1}speed={1}factor={1}>
          <Emoting>There is No Box To Think Outside Of</Emoting>
        </ParallaxLayer>
         </Parallax>
