@@ -18,16 +18,24 @@ import Parallax2 from '../components/Parallax2';
 const Emoting = styled.h2`
   margin-top: 6em;
   color: black;
- 
-`
+ `
  const Wrapper = styled.div `
   flex-grow: 1;
   /* background-image: url("https://images.unsplash.com/photo-1561419060-1850e1f5f5b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60") */
   `
-  
+ const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 1;
+  justify-content: center;
+  padding-top: 0;
+  text-align: center;
+  min-height: 100vh;
+ `
 
 const IndexPage = (props) => (
-  <Layout>
+  <Container>
     
     <SEO title="Home" />
     <Wrapper>
@@ -44,10 +52,11 @@ const IndexPage = (props) => (
     <div>
       <h3>Love is Not a Moving Target</h3>
     </div>
-    <div>
+    <Layout>
     {/* <Img style={{height:'100%', width:'100%'}}fluid={props.data.file.childImageSharp.fluid}/> */}
     <Image width={[ 4/5, 4/5, 4/5, 4/5 ]} src={props.data.file.childImageSharp.fluid.src}/>
-    </div>
+    <Emoting>Swipe Left or Right</Emoting>
+    </Layout>
     <Pencil index={0}/> 
     <Pen index={0}/>
     <div>
@@ -75,7 +84,7 @@ const IndexPage = (props) => (
     </Wrapper>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
  
-  </Layout>
+  </Container>
 )
 
 export default IndexPage
