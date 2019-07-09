@@ -16,8 +16,12 @@ export default class Pencil extends Component {
   static defaultProps = {
     words: ['None of us Stand A Chance Here', 
             'I Can\'t Move Until I Moved My Mind',
-            'There is No Box to Think Outside of',
+            'As Soon As I Start to Listen - You\'ll Say You Feel Like You\'ve Known Me Forever',
             'Not Transcendence; being',
+            'My world, you\'re a thing which can\'t speak for itself',
+            'Semantics are the enemy of understanding',
+            'The subtle power of subversion is diffusion',
+            'The thing about people is this: The best time to call is for no reason at all'
   
           ]
   }

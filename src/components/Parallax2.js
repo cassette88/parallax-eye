@@ -8,7 +8,7 @@ import './parallax.css'
 
 export default function Parallax2() {
     return (
-        <Parallax pages={3} >
+        <Parallax pages={1} >
         <ParallaxLayer className="layer0" offset={0}speed={0.5}factor={1} > 
         {/* <ParallaxLayer className="x1" factor={.2}>
         <ParallaxLayer className="cloud" factor={.2}></ParallaxLayer></ParallaxLayer> */}

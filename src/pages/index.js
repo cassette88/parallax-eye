@@ -62,6 +62,15 @@ const IndexPage = (props) => (
     <Pen index={2}/>
     <Pen index={3}/>
     <div><Link to="/page-2">Bye</Link></div>
+    
+    <Pencil index={4}/>
+    <Pen index={4}/>
+    <Pencil index={5}/>
+    <Pen index={5}/>
+    <Pencil index={6}/>
+    <Pen index={6}/>
+    <Pencil index={7}/>
+    <Pen index={7}/>
     </SwipeableViews>
     </Wrapper>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
