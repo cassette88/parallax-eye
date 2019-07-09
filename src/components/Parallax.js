@@ -10,8 +10,8 @@ const Emoting = styled.h2`
  
 `
 const FadeOut = styled.p`
-   margin-top:8em;
-   color: pink;
+   margin-top:6.5em;
+   color: #FFC0CB;
 `
 export default function PLayers() {
   const data = useStaticQuery(graphql`
