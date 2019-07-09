@@ -10,7 +10,7 @@ const Emoting = styled.h2`
  
 `
 const FadeOut = styled.p`
-   margin-top:6.5em;
+  
    color: #FFC0CB;
 `
 export default function PLayers() {
