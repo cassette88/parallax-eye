@@ -25,13 +25,15 @@ const Emoting = styled.h2`
   `
  const Container = styled.div`
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   align-items: stretch;
-  z-index: 1;
+  z-index: -1;
   justify-content: center;
   padding-top: 0;
+  padding: 0px 1.0875rem 1.45rem;
   text-align: center;
-  min-height: 100vh;
+  
  `
 
 const IndexPage = (props) => (
